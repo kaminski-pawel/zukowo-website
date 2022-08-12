@@ -1,6 +1,7 @@
 <template>
   <main>
     <MCarousel />
+    <MLead></MLead>
     <MFeaturette img-align="right" lead="Lorem ipsum solo cedit">
       First featurette heading.
       <span class="text-muted">It'll blow your mind.</span>
