@@ -1,5 +1,7 @@
 <template>
-  <Tutorial />
+  <main>
+    <MCarousel />
+  </main>
 </template>
 
 <script lang="ts">
