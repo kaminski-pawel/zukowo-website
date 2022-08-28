@@ -62,24 +62,16 @@
       lead="Żukowo to malownicza wieś w Polsce północnej, położona 1,5 km od Jeziora Łętowskiego i 30 km od Morza Bałtyckiego i plaży w Darłowie i Jarosławcu. W 2018 roku Żukowo zostało wybrane najpiękniejszą wsią województwa zachodniopomorskiego."
     ></MLead>
 
-    <div class="container">
-      <div class="row justify-content-center">
-        <h4>Żukowo 39, 76-124 Sławno, Zachodniopomorskie, Polska</h4>
-        <img src="@/static/img/zukowo-static-map.jpg" alt="" />
-      </div>
-    </div>
+    <MAddress
+      :headers="['Żukowo 39', '76-124 Sławno', 'Zachodniopomorskie, Polska']"
+    ></MAddress>
+
     <!-- <GoogleMap></GoogleMap> -->
 
-    <section class="py-5">
-      <div class="container my-5">
-        <div class="row justify-content-center">
-          <h4>Zadzwoń i dowiedz się, czy jest wolne miejsce</h4>
-        </div>
-        <div class="row justify-content-center">
-          <p>+48 608 417 513 lub +48 608 417 512</p>
-        </div>
-      </div>
-    </section>
+    <MCallMe
+      :headers="['Zadzwoń i dowiedz się, ', 'czy jest wolne miejsce']"
+      :paragraphs="['+48 608 417 513 lub +48 608 417 512']"
+    ></MCallMe>
   </main>
 </template>
 
