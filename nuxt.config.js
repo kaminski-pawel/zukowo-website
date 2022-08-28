@@ -1,6 +1,17 @@
+import { NUXT_ENV_GOOGLE_API_KEY } from './.env'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+
+  env: {
+    NUXT_ENV_GOOGLE_API_KEY,
+  },
+
+  server: {
+    port: 8000,
+    // host: '0.0.0.0', // default: localhost,
+    timing: false,
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -25,7 +36,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~/plugins/vue-google-maps.js', mode: 'client' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

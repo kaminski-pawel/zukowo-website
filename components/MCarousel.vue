@@ -19,8 +19,8 @@
         <!-- src="@/static/img/plot_1440x394.avif" -->
         <!-- src="@/static/img/side_1440x960.avif" -->
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+          <h2>Wynajmij domek na wsi</h2>
+          <p>Zażyj świeżego powietrza.</p>
         </div>
       </div>
       <div class="carousel-item">
@@ -69,7 +69,7 @@
 
 <script>
 export default {
-  name: 'MCarousel2',
+  name: 'MCarousel',
 }
 </script>
 

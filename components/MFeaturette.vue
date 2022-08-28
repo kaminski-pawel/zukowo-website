@@ -4,10 +4,11 @@
     <div class="row featurette">
       <div :class="textStyle">
         <h2 class="featurette-heading">
-          <slot></slot>
+          <slot name="header"></slot>
         </h2>
         <p class="lead">
-          {{ lead }}
+          <slot name="body"></slot>
+          <a href="#" class="btn btn-primary my-2">Zobacz więcej zdjęć</a>
         </p>
       </div>
       <div :class="imgStyle">
@@ -28,10 +29,6 @@
 export default {
   name: 'MFeaturette',
   props: {
-    lead: {
-      type: String,
-      required: true,
-    },
     imgAlign: {
       type: String,
       default: 'right',

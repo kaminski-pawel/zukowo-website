@@ -3,15 +3,12 @@
     <div class="container my-5">
       <div class="row justify-content-center">
         <div class="col-lg-6">
-          <h2>Full Width Backgrounds</h2>
+          <h2>{{ header }}</h2>
           <p class="lead">
-            A single, lightweight helper class allows you to add engaging, full
-            width background images to sections of your page.
+            {{ lead }}
           </p>
           <p class="mb-0">
-            The universe is almost 14 billion years old, and, wow! Life had no
-            problem starting here on Earth! I think it would be inexcusably
-            egocentric of us to suggest that we're alone in the universe.
+            {{ body }}
           </p>
         </div>
       </div>
@@ -22,6 +19,11 @@
 <script>
 export default {
   name: 'MLead',
+  props: {
+    header: { type: String, default: '' },
+    lead: { type: String, default: '' },
+    body: { type: String, default: '' },
+  },
   data() {
     return {}
   },
