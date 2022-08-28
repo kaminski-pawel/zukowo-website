@@ -66,7 +66,7 @@
       :headers="['Żukowo 39', '76-124 Sławno', 'Zachodniopomorskie, Polska']"
     ></MAddress>
 
-    <!-- <GoogleMap></GoogleMap> -->
+    <GoogleMap></GoogleMap>
 
     <MCallMe
       :headers="['Zadzwoń i dowiedz się, ', 'czy jest wolne miejsce']"

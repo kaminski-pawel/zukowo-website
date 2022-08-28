@@ -1,10 +1,12 @@
-import { NUXT_ENV_GOOGLE_API_KEY } from './.env'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  env: {
-    NUXT_ENV_GOOGLE_API_KEY,
+  publicRuntimeConfig: {
+    NUXT_ENV_GOOGLE_API_KEY: process.env.NUXT_ENV_GOOGLE_API_KEY,
+  },
+  privateRuntimeConfig: {
+    NUXT_ENV_GOOGLE_API_KEY: process.env.NUXT_ENV_GOOGLE_API_KEY,
   },
 
   server: {
