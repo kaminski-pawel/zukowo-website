@@ -7,7 +7,11 @@
       body=""
     ></MLead>
 
-    <MFeaturette img-align="right" lead="Lorem ipsum solo cedit">
+    <MFeaturette
+      img-align="right"
+      :images="imagesHome"
+      lead="Lorem ipsum solo cedit"
+    >
       <template #header>
         <span class="text-muted">Dom</span>
         składa się z:
@@ -22,7 +26,11 @@
         </ul>
       </template>
     </MFeaturette>
-    <MFeaturette img-align="left" lead="Lorem ipsum solo cedit">
+    <MFeaturette
+      img-align="left"
+      :images="imagesLand"
+      lead="Lorem ipsum solo cedit"
+    >
       <template #header>
         <span class="text-muted">Na posesji</span>
         na której położony jest dom, znajdują się także:
@@ -35,7 +43,11 @@
         </ul>
       </template>
     </MFeaturette>
-    <MFeaturette img-align="right" lead="Lorem ipsum solo cedit">
+    <MFeaturette
+      img-align="right"
+      :images="imagesNear"
+      lead="Lorem ipsum solo cedit"
+    >
       <template #header>
         <span class="text-muted">W niedalekiej odległości od domu</span>
         znajdują się:
@@ -80,5 +92,54 @@ import Vue from 'vue'
 
 export default Vue.extend({
   name: 'IndexPage',
+  data() {
+    return {
+      imagesHome: [
+        {
+          thumb: require('@/static/img/clock_500x500.avif'),
+          src: require('@/static/img/clock_500x500.avif'),
+          caption: 'caption to display. receive <html> <b>tag</b>', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb:
+            'https://images.dog.ceo//breeds//mountain-bernese//n02107683_3351.jpg',
+          src: 'https://images.dog.ceo//breeds//mountain-bernese//n02107683_3351.jpg',
+          caption: 'caption to display. receive <html> <b>tag</b>', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+      ],
+      imagesLand: [
+        {
+          thumb: 'https://images.dog.ceo//breeds//kuvasz//n02104029_4131.jpg',
+          src: 'https://images.dog.ceo//breeds//kuvasz//n02104029_4131.jpg',
+          caption: 'caption to display. receive <html> <b>tag</b>', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb:
+            'https://images.dog.ceo//breeds//mountain-bernese//n02107683_3351.jpg',
+          src: 'https://images.dog.ceo//breeds//mountain-bernese//n02107683_3351.jpg',
+          caption: 'caption to display. receive <html> <b>tag</b>', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+      ],
+      imagesNear: [
+        {
+          thumb: 'https://images.dog.ceo//breeds//kuvasz//n02104029_4131.jpg',
+          src: 'https://images.dog.ceo//breeds//kuvasz//n02104029_4131.jpg',
+          caption: 'caption to display. receive <html> <b>tag</b>', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb:
+            'https://images.dog.ceo//breeds//mountain-bernese//n02107683_3351.jpg',
+          src: 'https://images.dog.ceo//breeds//mountain-bernese//n02107683_3351.jpg',
+          caption: 'caption to display. receive <html> <b>tag</b>', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+      ],
+    }
+  },
 })
 </script>
