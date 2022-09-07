@@ -1,6 +1,7 @@
 <template>
   <main>
-    <MCarousel />
+    <MCarousel :slides="imagesCarousel" />
+
     <MLead
       header="Wynajmij mały dom na wsi otoczony przyrodą."
       lead="Dom położony jest nad trzema stawami, niedaleko jeziora, w pięknych okolicznościach przyrody."
@@ -10,6 +11,7 @@
     <MFeaturette
       img-align="right"
       :images="imagesHome"
+      :img-src="require(`@/static/img/1.jpg`)"
       lead="Lorem ipsum solo cedit"
     >
       <template #header>
@@ -29,6 +31,7 @@
     <MFeaturette
       img-align="left"
       :images="imagesLand"
+      :img-src="require(`@/static/img/1.jpg`)"
       lead="Lorem ipsum solo cedit"
     >
       <template #header>
@@ -46,6 +49,7 @@
     <MFeaturette
       img-align="right"
       :images="imagesNear"
+      :img-src="require(`@/static/img/1.jpg`)"
       lead="Lorem ipsum solo cedit"
     >
       <template #header>
@@ -94,13 +98,17 @@ export default Vue.extend({
   name: 'IndexPage',
   data() {
     return {
+      imagesCarousel: [
+        {image: require('@/static/img/2.jpg')},
+        {image: require('@/static/img/1.jpg')},
+      ],
       imagesHome: [
-        {
-          thumb: require('@/static/img/clock_500x500.avif'),
-          src: require('@/static/img/clock_500x500.avif'),
-          caption: 'caption to display. receive <html> <b>tag</b>', // Optional
-          //   srcset: '...', // Optional for displaying responsive images
-        },
+        // {
+        //   thumb: require('@/static/img/clock_500x500.avif'),
+        //   src: require('@/static/img/clock_500x500.avif'),
+        //   caption: 'caption to display. receive <html> <b>tag</b>', // Optional
+        //   //   srcset: '...', // Optional for displaying responsive images
+        // },
         {
           thumb:
             'https://images.dog.ceo//breeds//mountain-bernese//n02107683_3351.jpg',
@@ -143,3 +151,7 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style>
+@import "@/static/css/style.css";
+</style>
