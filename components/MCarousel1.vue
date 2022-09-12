@@ -13,7 +13,7 @@
       <div class="carousel-item active">
         <img
           class="d-block w-100"
-          src="@/static/img/2.jpg"
+          src="@/static/img/hero-01.avif"
           alt="..."
         />
         <!-- src="@/static/img/plot_1440x394.avif" -->

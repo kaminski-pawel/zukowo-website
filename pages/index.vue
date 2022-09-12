@@ -11,11 +11,11 @@
     <MFeaturette
       img-align="right"
       :images="imagesHome"
-      :img-src="require(`@/static/img/1.jpg`)"
+      :img-src="require(`@/static/img/home-01.avif`)"
       lead="Lorem ipsum solo cedit"
     >
       <template #header>
-        <span class="text-muted">Dom</span>
+        <span class="text-green">Dom</span>
         składa się z:
       </template>
       <template #body>
@@ -31,11 +31,11 @@
     <MFeaturette
       img-align="left"
       :images="imagesLand"
-      :img-src="require(`@/static/img/1.jpg`)"
+      :img-src="require(`@/static/img/land-02.avif`)"
       lead="Lorem ipsum solo cedit"
     >
       <template #header>
-        <span class="text-muted">Na posesji</span>
+        <span class="text-green">Na posesji</span>
         na której położony jest dom, znajdują się także:
       </template>
       <template #body>
@@ -49,11 +49,11 @@
     <MFeaturette
       img-align="right"
       :images="imagesNear"
-      :img-src="require(`@/static/img/1.jpg`)"
+      :img-src="require(`@/static/img/near-05.avif`)"
       lead="Lorem ipsum solo cedit"
     >
       <template #header>
-        <span class="text-muted">W niedalekiej odległości od domu</span>
+        <span class="text-green">W niedalekiej odległości od domu</span>
         znajdują się:
       </template>
       <template #body>
@@ -99,51 +99,156 @@ export default Vue.extend({
   data() {
     return {
       imagesCarousel: [
-        {image: require('@/static/img/2.jpg')},
-        {image: require('@/static/img/1.jpg')},
+        {image: require('@/static/img/hero-01.avif')},
+        {image: require('@/static/img/hero-02.avif')},
       ],
       imagesHome: [
-        // {
-        //   thumb: require('@/static/img/clock_500x500.avif'),
-        //   src: require('@/static/img/clock_500x500.avif'),
-        //   caption: 'caption to display. receive <html> <b>tag</b>', // Optional
-        //   //   srcset: '...', // Optional for displaying responsive images
-        // },
         {
-          thumb:
-            'https://images.dog.ceo//breeds//mountain-bernese//n02107683_3351.jpg',
-          src: 'https://images.dog.ceo//breeds//mountain-bernese//n02107683_3351.jpg',
-          caption: 'caption to display. receive <html> <b>tag</b>', // Optional
+          thumb: require('@/static/img/home-02.avif'),
+          src: require('@/static/img/home-02.avif'),
+          caption: 'Duży pokój', // Optional
           //   srcset: '...', // Optional for displaying responsive images
         },
+        {
+          thumb: require('@/static/img/home-03.avif'),
+          src: require('@/static/img/home-03.avif'),
+          caption: 'Antresola', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/home-04.avif'),
+          src: require('@/static/img/home-04.avif'),
+          caption: 'Kuchnia', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/home-05.avif'),
+          src: require('@/static/img/home-05.avif'),
+          caption: 'Przedsionek', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/home-06.avif'),
+          src: require('@/static/img/home-06.avif'),
+          caption: 'Okno z widokiem na ogródek', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/home-07.avif'),
+          src: require('@/static/img/home-07.avif'),
+          caption: 'Dom od strony ogrodu', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/home-08.avif'),
+          src: require('@/static/img/home-08.avif'),
+          //   srcset: '...', // Optional for displaying responsive images
+        },        
       ],
       imagesLand: [
         {
-          thumb: 'https://images.dog.ceo//breeds//kuvasz//n02104029_4131.jpg',
-          src: 'https://images.dog.ceo//breeds//kuvasz//n02104029_4131.jpg',
-          caption: 'caption to display. receive <html> <b>tag</b>', // Optional
+          thumb: require('@/static/img/land-01.avif'),
+          src: require('@/static/img/land-01.avif'),
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
-          thumb:
-            'https://images.dog.ceo//breeds//mountain-bernese//n02107683_3351.jpg',
-          src: 'https://images.dog.ceo//breeds//mountain-bernese//n02107683_3351.jpg',
-          caption: 'caption to display. receive <html> <b>tag</b>', // Optional
+          thumb: require('@/static/img/land-02.avif'),
+          src: require('@/static/img/land-02.avif'),
+          caption: 'Staw', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/land-03.avif'),
+          src: require('@/static/img/land-03.avif'),
+          caption: 'Miejsce na ognisko', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/land-04.avif'),
+          src: require('@/static/img/land-04.avif'),
+          caption: 'Staw', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/land-05.avif'),
+          src: require('@/static/img/land-05.avif'),
+          caption: 'Miejsce na ognisko', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/land-06.avif'),
+          src: require('@/static/img/land-06.avif'),
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/land-07.avif'),
+          src: require('@/static/img/land-07.avif'),
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+          {
+          thumb: require('@/static/img/land-08.avif'),
+          src: require('@/static/img/land-08.avif'),
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/land-09.avif'),
+          src: require('@/static/img/land-09.avif'),
           //   srcset: '...', // Optional for displaying responsive images
         },
       ],
       imagesNear: [
         {
-          thumb: 'https://images.dog.ceo//breeds//kuvasz//n02104029_4131.jpg',
-          src: 'https://images.dog.ceo//breeds//kuvasz//n02104029_4131.jpg',
-          caption: 'caption to display. receive <html> <b>tag</b>', // Optional
+          thumb: require('@/static/img/near-01.avif'),
+          src: require('@/static/img/near-01.avif'),
+          caption: 'Wieś Żukowo', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+{
+          thumb: require('@/static/img/near-02.avif'),
+          src: require('@/static/img/near-02.avif'),
+          caption: 'Zabytkowy kościół w Żukowie', // Optional
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
-          thumb:
-            'https://images.dog.ceo//breeds//mountain-bernese//n02107683_3351.jpg',
-          src: 'https://images.dog.ceo//breeds//mountain-bernese//n02107683_3351.jpg',
-          caption: 'caption to display. receive <html> <b>tag</b>', // Optional
+          thumb: require('@/static/img/near-03.avif'),
+          src: require('@/static/img/near-03.avif'),
+          caption: 'Zamek w Krągu', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/near-04.avif'),
+          src: require('@/static/img/near-04.avif'),
+          caption: 'Zamek w Krągu', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/near-05.avif'),
+          src: require('@/static/img/near-05.avif'),
+          caption: 'Jezioro Łętowskie', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/near-06.avif'),
+          src: require('@/static/img/near-06.avif'),
+          caption: 'Jezioro Łętowskie', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/near-07.avif'),
+          src: require('@/static/img/near-07.avif'),
+          caption: 'Okoliczne pola', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/near-08.avif'),
+          src: require('@/static/img/near-08.avif'),
+          caption: 'Okoliczne pola', // Optional
+          //   srcset: '...', // Optional for displaying responsive images
+        },
+        {
+          thumb: require('@/static/img/near-09.avif'),
+          src: require('@/static/img/near-09.avif'),
+          caption: 'Okoliczne lasy', // Optional
           //   srcset: '...', // Optional for displaying responsive images
         },
       ],

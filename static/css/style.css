@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+body {
+    background-color: #fffcf8;
+    /* background-color: #fffbf4; */
+    color: #31251c;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+}
+
+.lead {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+h2 {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+.text-green {
+    color: #1e3626 !important;
+    font-weight: 400;
+}
+
+.btn-primary {
+    color: #31251c;
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+}

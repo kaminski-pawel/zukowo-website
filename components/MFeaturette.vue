@@ -18,7 +18,6 @@
           class="featurette-image img-fluid mx-auto"
           data-src="holder.js/500x500/auto"
           alt="500x500"
-          style="width: 500px; height: 500px"
           :src="imgSrc"
           data-holder-rendered="true"
         />
