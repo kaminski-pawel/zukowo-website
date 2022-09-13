@@ -9,7 +9,7 @@
         <p class="lead">
           <slot name="body"></slot>
           <button class="btn btn-primary my-2" @click="openGallery">
-            Zobacz więcej zdjęć
+            Weitere Fotos ansehen
           </button>
         </p>
       </div>

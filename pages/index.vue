@@ -3,8 +3,8 @@
     <MCarousel :slides="imagesCarousel" />
 
     <MLead
-      header="Wynajmij mały dom na wsi otoczony przyrodą."
-      lead="Dom położony jest nad trzema stawami, niedaleko jeziora, w pięknych okolicznościach przyrody."
+      header="Mieten Sie ein kleines Ferienhaus auf dem Land inmitten der Natur."
+      lead="Das Haus liegt an drei Teichen, in der Nähe des Sees, in wunderschönen Umgebungen."
       body=""
     ></MLead>
 
@@ -15,16 +15,16 @@
       lead="Lorem ipsum solo cedit"
     >
       <template #header>
-        <span class="text-green">Dom</span>
-        składa się z:
+        <span class="text-green">Das Haus </span>
+        besteht aus:
       </template>
       <template #body>
         <ul>
-          <li>dużego, przestronnego pokoju z antresolą z 4 łóżkami</li>
-          <li>kuchni</li>
-          <li>przedsionka</li>
-          <li>łazienki i ubikacji</li>
-          <li>ogródka za domem</li>
+          <li>Großes, geräumiges Zimmer mit Zwischengeschoss mit 4 Betten</li>
+          <li>Küche</li>
+          <li>Vorraum</li>
+          <li>Badezimmer/Toilette</li>
+          <li>Garten hinter dem Haus</li>
         </ul>
       </template>
     </MFeaturette>
@@ -35,14 +35,14 @@
       lead="Lorem ipsum solo cedit"
     >
       <template #header>
-        <span class="text-green">Na posesji</span>
-        na której położony jest dom, znajdują się także:
+        <span class="text-green">Auf dem Grundstück, </span>
+        auf dem sich das Haus befindet, gibt es auch:
       </template>
       <template #body>
         <ul>
-          <li>trzy stawy</li>
-          <li>miejsce na ognisko</li>
-          <li>bujna roślinność</li>
+          <li>drei Teiche</li>
+          <li>Platz für ein Lagerfeuer</li>
+          <li>üppige Vegetation</li>
         </ul>
       </template>
     </MFeaturette>
@@ -53,40 +53,43 @@
       lead="Lorem ipsum solo cedit"
     >
       <template #header>
-        <span class="text-green">W niedalekiej odległości od domu</span>
-        znajdują się:
+        <span class="text-green">Nicht weit vom Haus </span>
+        entfernt befinden sich:
       </template>
       <template #body>
         <ul>
           <li>
-            Jezioro Łętowskie - wspaniałe miejsce do pływania, łowienia ryb, na
-            biwak lub piknik (1,5 km)
+            Łętowskie See (Lantower See) - ein großartiger Ort zum Schwimmen,
+            Angeln, Campen oder Picknicken (1,5 km)
           </li>
           <li>
-            lasy, łąki i pola, idealne na długie spacery, piesze i rowerowe
-            wędrówki
+            Wälder, Wiesen und Felder, ideal für lange Spaziergänge, Wanderungen
+            und Radtouren
           </li>
-          <li>unikalny Rezerwat Przyrody Janiewickie Bagno (4 km)</li>
-          <li>Pałac Bismarcka w Warcinie (7 km)</li>
-          <li>Zamek Rycerski Podewils w Krągu (12 km)</li>
+          <li>einzigartiges Naturschutzgebiet Janiewice-Sumpf (4 km)</li>
+          <li>Bismarck Landgut in Warcino (Schloss Varzin) (7 km)</li>
+          <li>Ritterburg Podewils in Krąg (12 km)</li>
         </ul>
       </template>
     </MFeaturette>
 
     <MLead
-      header="Odwiedź nas - wieś Żukowo"
-      lead="Żukowo to malownicza wieś w Polsce północnej, położona 1,5 km od Jeziora Łętowskiego i 30 km od Morza Bałtyckiego i plaży w Darłowie i Jarosławcu. W 2018 roku Żukowo zostało wybrane najpiękniejszą wsią województwa zachodniopomorskiego."
+      header="Besuchen Sie uns - Dorf Żukowo"
+      lead="Żukowo ist ein malerisches Dorf im Norden Polens, 1,5 km vom Lantower See (Łętowskie See) und 30 km von der Ostsee und dem Strand in Darłowo (Rügenwalde) und Jarosławiec (Jershöft) entfernt. 2018 wurde Żukowo zum schönsten Dorf der Woiwodschaft Westpommern gewählt."
     ></MLead>
 
     <MAddress
-      :headers="['Żukowo 39', '76-124 Sławno', 'Zachodniopomorskie, Polska']"
+      :headers="['Żukowo 39', '76-124 Sławno', 'Westpommern, Polen']"
     ></MAddress>
 
     <GoogleMap></GoogleMap>
 
     <MCallMe
-      :headers="['Zadzwoń i dowiedz się, ', 'czy jest wolne miejsce']"
-      :paragraphs="['+48 608 417 513 lub +48 608 417 512']"
+      :headers="[
+        'Rufen Sie uns an und finden Sie heraus, ',
+        'ob es einen freien Platz gibt.',
+      ]"
+      :paragraphs="['+48 608 417 513 oder +48 608 417 512']"
     ></MCallMe>
   </main>
 </template>
@@ -99,100 +102,106 @@ export default Vue.extend({
   data() {
     return {
       imagesCarousel: [
-        {image: require('@/static/img/hero-01.avif')},
-        {image: require('@/static/img/hero-02.avif')},
+        { image: require('@/static/img/hero-01.avif') },
+        { image: require('@/static/img/hero-02.avif') },
       ],
       imagesHome: [
         {
           thumb: require('@/static/img/home-02.avif'),
           src: require('@/static/img/home-02.avif'),
-          caption: 'Duży pokój', // Optional
+          caption: 'Großes Zimmer',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/home-03.avif'),
           src: require('@/static/img/home-03.avif'),
-          caption: 'Antresola', // Optional
+          caption: 'Zwischengeschoss',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/home-04.avif'),
           src: require('@/static/img/home-04.avif'),
-          caption: 'Kuchnia', // Optional
+          caption: 'Küche', // Optional
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/home-05.avif'),
           src: require('@/static/img/home-05.avif'),
-          caption: 'Przedsionek', // Optional
+          caption: 'Vorraum',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/home-06.avif'),
           src: require('@/static/img/home-06.avif'),
-          caption: 'Okno z widokiem na ogródek', // Optional
+          caption: 'Fenster mit Blick auf den Garten',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/home-07.avif'),
           src: require('@/static/img/home-07.avif'),
-          caption: 'Dom od strony ogrodu', // Optional
+          caption: 'Haus mit Blick auf den Garten',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/home-08.avif'),
           src: require('@/static/img/home-08.avif'),
+          caption: 'Grundstück',
           //   srcset: '...', // Optional for displaying responsive images
-        },        
+        },
       ],
       imagesLand: [
         {
           thumb: require('@/static/img/land-01.avif'),
           src: require('@/static/img/land-01.avif'),
+          caption: 'Grundstück',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-02.avif'),
           src: require('@/static/img/land-02.avif'),
-          caption: 'Staw', // Optional
+          caption: 'Teich',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-03.avif'),
           src: require('@/static/img/land-03.avif'),
-          caption: 'Miejsce na ognisko', // Optional
+          caption: 'Platz für ein Lagerfeuer',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-04.avif'),
           src: require('@/static/img/land-04.avif'),
-          caption: 'Staw', // Optional
+          caption: 'Teich',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-05.avif'),
           src: require('@/static/img/land-05.avif'),
-          caption: 'Miejsce na ognisko', // Optional
+          caption: 'Platz für ein Lagerfeuer',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-06.avif'),
           src: require('@/static/img/land-06.avif'),
+          caption: 'Grundstück',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-07.avif'),
           src: require('@/static/img/land-07.avif'),
+          caption: 'Grundstück',
           //   srcset: '...', // Optional for displaying responsive images
         },
-          {
+        {
           thumb: require('@/static/img/land-08.avif'),
           src: require('@/static/img/land-08.avif'),
+          caption: 'Grundstück',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-09.avif'),
           src: require('@/static/img/land-09.avif'),
+          caption: 'Grundstück',
           //   srcset: '...', // Optional for displaying responsive images
         },
       ],
@@ -200,55 +209,55 @@ export default Vue.extend({
         {
           thumb: require('@/static/img/near-01.avif'),
           src: require('@/static/img/near-01.avif'),
-          caption: 'Wieś Żukowo', // Optional
+          caption: 'Dorf Żukowo',
           //   srcset: '...', // Optional for displaying responsive images
         },
-{
+        {
           thumb: require('@/static/img/near-02.avif'),
           src: require('@/static/img/near-02.avif'),
-          caption: 'Zabytkowy kościół w Żukowie', // Optional
+          caption: 'Historische Kirche in Żukowo',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-03.avif'),
           src: require('@/static/img/near-03.avif'),
-          caption: 'Zamek w Krągu', // Optional
+          caption: 'Ritterburg Podewils in Krąg',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-04.avif'),
           src: require('@/static/img/near-04.avif'),
-          caption: 'Zamek w Krągu', // Optional
+          caption: 'Ritterburg Podewils in Krąg',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-05.avif'),
           src: require('@/static/img/near-05.avif'),
-          caption: 'Jezioro Łętowskie', // Optional
+          caption: 'Łętowskie See',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-06.avif'),
           src: require('@/static/img/near-06.avif'),
-          caption: 'Jezioro Łętowskie', // Optional
+          caption: 'Łętowskie See',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-07.avif'),
           src: require('@/static/img/near-07.avif'),
-          caption: 'Okoliczne pola', // Optional
+          caption: 'Umliegende Felder',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-08.avif'),
           src: require('@/static/img/near-08.avif'),
-          caption: 'Okoliczne pola', // Optional
+          caption: 'Umliegende Felder',
           //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-09.avif'),
           src: require('@/static/img/near-09.avif'),
-          caption: 'Okoliczne lasy', // Optional
+          caption: 'Umliegende Wälder',
           //   srcset: '...', // Optional for displaying responsive images
         },
       ],
@@ -258,5 +267,5 @@ export default Vue.extend({
 </script>
 
 <style>
-@import "@/static/css/style.css";
+@import '@/static/css/style.css';
 </style>
