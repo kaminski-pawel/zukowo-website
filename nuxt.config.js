@@ -15,6 +15,11 @@ export default {
     timing: false,
   },
 
+  env: {
+    NUXT_ENV_HOME_ADDRESS: process.env.NUXT_ENV_HOME_ADDRESS,
+    NUXT_ENV_HOME_PHONE: process.env.NUXT_ENV_HOME_PHONE,
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'zukowo',

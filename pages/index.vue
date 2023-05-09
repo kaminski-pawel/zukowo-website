@@ -79,7 +79,7 @@
     ></MLead>
 
     <MAddress
-      :headers="['Żukowo 39', '76-124 Sławno', 'Westpommern, Polen']"
+      :headers="[homeAddress, '76-124 Sławno', 'Westpommern, Polen']"
     ></MAddress>
 
     <GoogleMap></GoogleMap>
@@ -101,6 +101,8 @@ export default Vue.extend({
   name: 'IndexPage',
   data() {
     return {
+      homeAddress: process.env.NUXT_ENV_HOME_ADDRESS,
+      homePhone: process.env.NUXT_ENV_HOME_PHONE,
       imagesCarousel: [
         { image: require('@/static/img/hero-01.avif') },
         { image: require('@/static/img/hero-02.avif') },
