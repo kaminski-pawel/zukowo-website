@@ -114,43 +114,36 @@ export default Vue.extend({
           thumb: require('@/static/img/home-02.avif'),
           src: require('@/static/img/home-02.avif'),
           caption: 'Großes Zimmer',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/home-03.avif'),
           src: require('@/static/img/home-03.avif'),
           caption: 'Zwischengeschoss',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/home-04.avif'),
           src: require('@/static/img/home-04.avif'),
           caption: 'Küche', // Optional
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/home-05.avif'),
           src: require('@/static/img/home-05.avif'),
           caption: 'Vorraum',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/home-06.avif'),
           src: require('@/static/img/home-06.avif'),
           caption: 'Fenster mit Blick auf den Garten',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/home-07.avif'),
           src: require('@/static/img/home-07.avif'),
           caption: 'Haus mit Blick auf den Garten',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/home-08.avif'),
           src: require('@/static/img/home-08.avif'),
           caption: 'Grundstück',
-          //   srcset: '...', // Optional for displaying responsive images
         },
       ],
       imagesLand: [
@@ -158,55 +151,46 @@ export default Vue.extend({
           thumb: require('@/static/img/land-01.avif'),
           src: require('@/static/img/land-01.avif'),
           caption: 'Grundstück',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-02.avif'),
           src: require('@/static/img/land-02.avif'),
           caption: 'Teich',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-03.avif'),
           src: require('@/static/img/land-03.avif'),
           caption: 'Platz für ein Lagerfeuer',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-04.avif'),
           src: require('@/static/img/land-04.avif'),
           caption: 'Teich',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-05.avif'),
           src: require('@/static/img/land-05.avif'),
           caption: 'Platz für ein Lagerfeuer',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-06.avif'),
           src: require('@/static/img/land-06.avif'),
           caption: 'Grundstück',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-07.avif'),
           src: require('@/static/img/land-07.avif'),
           caption: 'Grundstück',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-08.avif'),
           src: require('@/static/img/land-08.avif'),
           caption: 'Grundstück',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/land-09.avif'),
           src: require('@/static/img/land-09.avif'),
           caption: 'Grundstück',
-          //   srcset: '...', // Optional for displaying responsive images
         },
       ],
       imagesNear: [
@@ -214,55 +198,46 @@ export default Vue.extend({
           thumb: require('@/static/img/near-01.avif'),
           src: require('@/static/img/near-01.avif'),
           caption: 'Dorf Żukowo',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-02.avif'),
           src: require('@/static/img/near-02.avif'),
           caption: 'Historische Kirche in Żukowo',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-03.avif'),
           src: require('@/static/img/near-03.avif'),
           caption: 'Ritterburg Podewils in Krąg',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-04.avif'),
           src: require('@/static/img/near-04.avif'),
           caption: 'Ritterburg Podewils in Krąg',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-05.avif'),
           src: require('@/static/img/near-05.avif'),
           caption: 'Łętowskie See',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-06.avif'),
           src: require('@/static/img/near-06.avif'),
           caption: 'Łętowskie See',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-07.avif'),
           src: require('@/static/img/near-07.avif'),
           caption: 'Umliegende Felder',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-08.avif'),
           src: require('@/static/img/near-08.avif'),
           caption: 'Umliegende Felder',
-          //   srcset: '...', // Optional for displaying responsive images
         },
         {
           thumb: require('@/static/img/near-09.avif'),
           src: require('@/static/img/near-09.avif'),
           caption: 'Umliegende Wälder',
-          //   srcset: '...', // Optional for displaying responsive images
         },
       ],
     }
