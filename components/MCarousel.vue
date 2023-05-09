@@ -6,7 +6,8 @@
         :key="i"
         :image="slide.image"
         :title="slide.title"
-        :content="slide.content" />
+        :content="slide.content"
+      />
     </vueper-slides>
   </div>
 </template>
@@ -20,8 +21,8 @@ export default {
   props: {
     slides: {
       type: Array,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {},
   methods: {},
@@ -29,4 +30,12 @@ export default {
 </script>
 
 <style scoped>
+.ribbon-parent {
+  overflow: hidden; /* required */
+  /* width: 50%; for demo only */
+  /* height: 250px some non-zero number; */
+  /* margin: 25px auto; for demo only */
+  /* border: 1px solid grey; for demo only */
+  /* position: relative; required  for demo */
+}
 </style>
