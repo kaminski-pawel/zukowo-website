@@ -47,7 +47,7 @@
     "jest": "^27.4.4",
     "prettier": "^2.5.1",
     "ts-jest": "^27.1.1",
-    "vue-jest": "^3.0.4",
-    "volar-service-vetur": "latest"
+    "volar-service-vetur": "latest",
+    "vue-jest": "^3.0.4"
   }
 }
