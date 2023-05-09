@@ -89,8 +89,10 @@
         'Rufen Sie uns an und finden Sie heraus, ',
         'ob es einen freien Platz gibt.',
       ]"
-      :paragraphs="['+48 608 417 513 oder +48 608 417 512']"
+      :paragraphs="[homePhone]"
     ></MCallMe>
+
+    <MAlert :header="`Wir sprechen Deutsch`"></MAlert>
   </main>
 </template>
 
